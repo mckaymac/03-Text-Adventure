@@ -1,0 +1,138 @@
+{
+    "verbs": [
+      { "v": "EXITS",   "map": "EXITS" },
+      { "v": "QUIT",    "map": "QUIT"  },
+      { "v": "NORTH",   "map": "NORTH" },
+      { "v": "N",       "map": "NORTH" },
+      { "v": "SOUTH",   "map": "SOUTH" },
+      { "v": "S",       "map": "SOUTH" },
+      { "v": "EAST",    "map": "EAST"  },
+      { "v": "E",       "map": "EAST"  },
+      { "v": "WEST",    "map": "WEST"  },
+      { "v": "W",       "map": "WEST"  },
+      { "v": "WU",      "map": "WAKE UP"},
+      { "v": "DC",      "map": "DRINK COFFEE"}
+    ],
+
+    "rooms": {
+      "START": {
+        "name": "Dreamscape",
+        "desc": "You find yourself in a vast green field with a single tree on a hill. The weather is nice and comfortable. This is odd because you remember going to bed in your house and not a field. The field has a dreamy atmosphere. What will you do?",
+        "exits": [
+          {
+            "verb": "WAKE UP",
+            "target": "BDRM1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BDRM1": {
+        "name": "Bedroom",
+        "desc": "You wake up in a room that is not your own, it is rather simple looking. It has the bed you are on and a door towards the north, nothing else.",
+        "exits": [
+            {
+                "verb":"NORTH",
+                "target":"HALLWAY",
+                "condition":""
+            }
+        ],
+        "inventory": []
+      },
+
+      "HALLWAY": {
+        "name": "Hallway",
+        "desc": "You find yourself in a hallway that has a stairway to the north, a door to the west, the room you woke up in to the south, and a door to the east.",
+        "exits": [
+            {
+                "verb":"NORTH",
+                "target":"LVRM",
+                "condition":""
+            },
+            {
+                "verb":"WEST",
+                "target":"BDRM2",
+                "condition":""
+            },
+            {
+                "verb":"EAST",
+                "target":"BATHROOM",
+                "condition":""
+            },
+            {
+                "verb":"SOUTH",
+                "target":"BDRM1",
+                "condition":""
+            }
+
+
+
+        ]
+        },
+
+        "BATHROOM":{
+            "name":"Bathroom",
+            "desc":"You are in the bathroom. There's nothing odd about the bathroom, it has what you would expect: a toilet,a mirror, a shower, and the door you just entered is to your west. The mirror seems to show the grassy field with the tree on the hill and not your reflection. ",
+            "exits": [
+                {
+                    "verb": "WEST",
+                    "target":"HALLWAY",
+                    "condition":""
+                }
+
+            ]
+        },
+
+        "BDRM2":{
+            "name":"Childhood Bedroom",
+            "desc":"You are in your childhood bedroom which is odd since your old house burned down years ago. Your nightlight is still on. The door you entered is to your east.",
+            "exits":[
+                {
+                    "verb":"EAST",
+                    "target":"HALLWAY",
+                    "condition":""
+                }
+            ]
+        },
+
+        "LVRM":{
+            "name":"Living Room",
+            "desc":"You find yourself in a living room, the only thing in it is a TV that is turned on. All its showing is you sleeping in your bed. There is an opening to the east and the stairs to your south.",
+            "exits":[
+                {
+                    "verb":"EAST",
+                    "target":"KITCHEN",
+                    "condition":""
+                },
+                {
+                    "verb":"SOUTH",
+                    "target":"HALLWAY",
+                    "condition":""
+                }
+            ]
+        },
+        "KITCHEN":{
+            "name":"Kitchen",
+            "desc":"You are in a bare bones kitchen with only a sink and a table with a piping hot cup of coffee that smells like it could wake even the dead. The entry way you just entered is to your west.",
+            "exits":[
+                {
+                    "verb":"DRINK COFFEE",
+                    "target":"END",
+                    "condition":""
+                },
+                {
+                    "verb":"WEST",
+                    "target":"LVRM",
+                    "condition":""
+                }
+            ]
+        },
+
+        "END":{
+            "name": "Total Wake Up",
+            "desc": "You figured it out! Your brain was acting weird again making you dream within a dream. You should probably stop doing that. Please enter: QUIT, to end the game.",
+            "exits":[]
+        }
+      }
+    }
+  
