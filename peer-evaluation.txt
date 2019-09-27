@@ -1,0 +1,34 @@
+Name: Hunter Brafford
+Date: 9/26/2019-9/27/2019
+Project: Peer evaluation on the Text adventure
+Peer's repository: Mckaymac
+
+What is something you learned by reviewing your peer's project?
+That they created a dream where they were walking around their childhood home again.
+Where they are dreaming of themselves dreaming.
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+There were no syntax errors preventing it for running correctly.
+ I would include more directionary verbs as they did.
+
+What suggestions would you have for your peer to improve his/her code?
+I would nicely suggest choosing a more creative setting than just a normal house with normal things inside. 
+ 
+What could have been clearer or better commented?
+What could have been clearer is what you could actually do, besides just walk around.
+In my opinion they did not really include much to do except walk around.
+So, I think that they could have better commented more available activities in these rooms.
+
+Was there anything in the code that was confusing to you? If so, what?
+No, nothing was confusing besides the lack of activites available in the rooms besides walking for the most part.
+Does the repository contain an appropriate LICENSE?
+Yes, it does.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+Well, they could include a description fo the story. 
+As well as a description of the background of the game.
+They could also give a general description of what is in the story too.
+
+Pay a compliment to your peer based on the quality of his/her code.
+This person wrote a good description of each of the rooms.
